@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeu</title>
+  <link rel="stylesheet" href="java.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1 id="home">🎮 Lancer le jeu</h1>
+  <button onclick="startGame()">Start</button>
+
+  <div id="game" class="hidden">
+    <h2>Temps : <span id="timer">60</span>s</h2>
+    <h2>Score : <span id="score">0</span></h2>
+
+    <div id="randomNumber" class="number">0</div>
+    <div id="buttons" class="grid"></div>
+  </div>
+
+  <h1 id="end" class="hidden">Fin du jeu</h1>
+  <h2 id="finalScore" class="hidden"></h2>
+  <button id="restartBtn" class="hidden" onclick="startGame()">Rejouer</button>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
